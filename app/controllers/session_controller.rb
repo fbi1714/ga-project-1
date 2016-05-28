@@ -1,6 +1,6 @@
 class SessionController < ApplicationController
 
-  before_action :authenticate, :only => [:new]
+  before_action :authenticate_user, :only => [:new]
 
   def new
     # Show the login form
@@ -27,9 +27,10 @@ class SessionController < ApplicationController
   end
 
   private
-    def authenticate
-      redirect_to users_path if @current_user
-    end
+
+  def authenticate_user
+    redirect_to order_index_path if @current_user.present?
+  end
 
 
 end

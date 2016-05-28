@@ -1,18 +1,10 @@
-<% if @user.errors.any? %>
-  <ol>
-    <% @user.errors.full_messages do |msg| %>
-    <li><%= msg %></li>
-    <% end %>
-  </ol>
-<% end %>
-
-<%= form_for @user do |f| %>
+<%= form_for @order do |f| %>
   <p>
-    <%= f.label :email %>
-    <%= f.email_field :email, :required => true %>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
   </p>
 
-  <p>
+  <!-- <p>
     <%= f.label :name %>
     <%= f.text_field :name, :required => true %>
   </p>
@@ -25,7 +17,7 @@
   <p>
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, :required => true %>
-  </p>
+  </p> -->
 
   <%= f.submit "Submit" %>
 <% end %>
