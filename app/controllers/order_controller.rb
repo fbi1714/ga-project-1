@@ -9,6 +9,7 @@ class OrderController < ApplicationController
     # to see the result as a hash of pods and assumptions:
     @hash = Wolfram::HashPresenter.new(result).to_hash
     @orders = Order.all
+    @posts = Order.paginate(:page => params[:page], :per_page => 1)
   end
 
   def new
