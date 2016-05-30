@@ -15,7 +15,7 @@
       <%= link_to "Login", login_path %> |
     <% end %>
     <% if @current_user %>
-    <%= link_to "All uses", users_path %> |
+    <%= link_to "All users", users_path %> |
     <%= link_to "Delete account", user_path( @current_user ), :method => :delete %> |
     <%= link_to "Edit Profile", edit_user_path( @current_user ) %> |
     <%= link_to "View Profile", @current_user %> |

@@ -3,7 +3,7 @@
 <div>
   <h2>Update Order</h2>
 
-  <%= form_for(:order, :url => {:action => 'edit', :id => @order.id}) do |f| %>
+  <%= form_for @order do |f| %>
 
     <%= render(:partial => "form", :locals => {:f => f}) %>
 

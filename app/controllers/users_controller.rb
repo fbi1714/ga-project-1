@@ -1,3 +1,4 @@
+
 class UsersController < ApplicationController
   #Run the authorise method on every request that goes to index
   before_action :authorise, :only => [:index]

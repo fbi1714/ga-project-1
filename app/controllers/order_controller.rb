@@ -1,13 +1,14 @@
-class OrderController < ApplicationController
 
+class OrderController < ApplicationController
   before_action :authorise
 
   def index
+    Wolfram.appid = "R75TQY-45HLK2EVYL"
+    query = 'Sydney Australia time'
+    result = Wolfram.fetch(query)
+    # to see the result as a hash of pods and assumptions:
+    @hash = Wolfram::HashPresenter.new(result).to_hash
     @orders = Order.all
-  end
-
-  def show
-    @order = Order.find params[:id]
   end
 
   def new
@@ -29,6 +30,7 @@ class OrderController < ApplicationController
 
   def update
     @order = Order.find(params[:id])
+
     if @order.update_attributes(order_params)
       flash[:notice] = "Order updated successfully."
       redirect_to order_index_path
@@ -50,7 +52,7 @@ class OrderController < ApplicationController
 
   private
     def order_params
-      params.require(:orders).permit(:description, :order_number)
+      params.require(:order).permit(:description, :order_number)
     end
 
     def authorise
