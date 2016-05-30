@@ -2,7 +2,7 @@
 <div>
   <h2>Create Order</h2>
 
-  <%= form_for(:orders, :url => {:action => 'create'}) do |f| %>
+  <%= form_for(:order, :url => {:action => 'create'}) do |f| %>
 
     <%= render(:partial => "form", :locals => {:f => f}) %>
 
