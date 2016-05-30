@@ -3,11 +3,11 @@
 <head>
   <title><%= "#{@page_title}" if @page_title %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 
   <nav>
     <%= link_to "Create an account", new_user_path%> |
@@ -20,8 +20,26 @@
     <%= link_to "Edit Profile", edit_user_path( @current_user ) %> |
     <%= link_to "View Profile", @current_user %> |
     <%= link_to "Logout", logout_path( @current_user ), :method => :delete %>
+
     <% end %>
   </nav>
+  <nav>
+   <div class="nav-wrapper">
+     <a href="#" class="brand-logo">BAC Systems</a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li><%= link_to "Create an account", new_user_path%></li>
+       <% if !@current_user %>
+       <li><%= link_to "Login", login_path %></li>
+       <% end %>
+       <% if @current_user %>
+       <li><a href="sass.html">Sass</a></li>
+       <li><a href="badges.html">Components</a></li>
+       <li><a href="collapsible.html">JavaScript</a></li>
+     </ul>
+   </div>
+ </nav>
+
+
   <!--
     "Show all users" - All the time
     "View a profile" - If I am logged in

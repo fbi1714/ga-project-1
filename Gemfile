@@ -29,6 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem  'wolfram'
 gem  'duck-duck-go'
+gem 'table_helpers', '~> 1.0'
 
 
 # Use Unicorn as the app server
