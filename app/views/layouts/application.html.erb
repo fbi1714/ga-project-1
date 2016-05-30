@@ -9,25 +9,29 @@
 </head>
 <body>
 
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><%= link_to "All users", users_path %></li>
+    <li><%= link_to "View/Edit Profile", @current_user %></li>
+    <li><%= link_to "Logout", logout_path( @current_user ), :method => :delete %></li>
+  </ul>
+
   <nav>
    <div class="nav-wrapper">
      <a href="#" class="brand-logo">BAC Systems</a>
      <ul id="nav-mobile" class="right hide-on-med-and-down">
-       <li><%= link_to "Create an account", new_user_path%></li>
        <% if !@current_user %>
+       <li><%= link_to "Create an account", new_user_path%></li>
        <li><%= link_to "Login", login_path %></li>
        <% end %>
        <% if @current_user %>
-           <li><%= link_to "All users", users_path %></li>
-           <li><%= link_to "Delete account", user_path( @current_user ), :method => :delete %></li>
-           <li><%= link_to "Edit Profile", edit_user_path( @current_user ) %></li>
-           <li><%= link_to "View Profile", @current_user %></li>
-           <li><%= link_to "Logout", logout_path( @current_user ), :method => :delete %></li>
-      <% end %>
-     </ul>
+       <li><%= link_to "Orders", order_index_path %></li>
+       <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+       <li><a class="dropdown-button" data-activates="dropdown1">Users<i class="material-icons right">arrow_drop_down</i></a></li>
+        <% end %>
+   </ul>
    </div>
  </nav>
-
 
   <!--
     "Show all users" - All the time
@@ -39,20 +43,9 @@
     "Create an account" - If I am not logged in
    -->
 
-
-  <% if @current_user %>
-      <p>Your email is <%= @current_user.email %></p>
-  <% end %>
-
-  <% if flash[:success] %>
-    <p><%= flash[:success] %></p>
-  <% end %>
-
-  <% if flash[:error] %>
-    <p><%= flash[:error] %></p>
-  <% end %>
-
 <%= yield %>
-
+<script>$(document).ready(function() {
+$(".dropdown-button").dropdown();
+});</script>
 </body>
 </html>

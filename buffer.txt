@@ -12,3 +12,23 @@
 
   <% end %>
 </nav>
+
+
+<li><%= link_to "Delete account", user_path( @current_user ), :method => :delete %></li>
+<li><%= link_to "Edit Profile", edit_user_path( @current_user ) %></li>
+<li><%= link_to "Logout", logout_path( @current_user ), :method => :delete %></li>
+
+
+
+
+  <% if @current_user %>
+      <p>Your email is <%= @current_user.email %></p>
+  <% end %>
+
+  <% if flash[:success] %>
+    <p><%= flash[:success] %></p>
+  <% end %>
+
+  <% if flash[:error] %>
+    <p><%= flash[:error] %></p>
+  <% end %>

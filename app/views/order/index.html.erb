@@ -1,10 +1,9 @@
 <% @page_title = "All Orders" %>
 <div>
 <p><%= @page_title %></p>
-<%= will_paginate @posts %>
 <table>
     <tr>
-      <th>ID</th>
+      <!-- <th>ID</th> -->
       <th>Description</th>
       <th>Order Number</th>
       <th>Created At</th>
@@ -13,7 +12,7 @@
     </tr>
     <% @orders.each do |order| %>
     <tr>
-      <td><%= order.id %></td>
+      <!-- <td><%#= order.id %></td> -->
       <td><%= order.description %></td>
       <td><%= order.order_number.to_s[0..2]%>.<%= order.order_number.to_s[3..4] %>.<%= order.order_number.to_s[5..7] %></td>
       <td><%= order.created_at.strftime("%d/%m/%Y : %X")  %></td>
@@ -26,18 +25,8 @@
     </tr>
     <% end %>
 </table>
-    <div>
-      <ul class="pagination">
-        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-        <li class="active"><a href="#!">1</a></li>
-        <li class="waves-effect"><a href="#!">2</a></li>
-        <li class="waves-effect"><a href="#!">3</a></li>
-        <li class="waves-effect"><a href="#!">4</a></li>
-        <li class="waves-effect"><a href="#!">5</a></li>
-        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-      </ul>
-    </div>
+  <%= will_paginate @posts %>
 </div>
 
-<div id="time"><%= @hash[:pods]["Result"][0][0..7] %></div>
-<div id="money"></div>
+<!-- <div id="time"><%# @hash[:pods]["Result"][0][0..7] %></div> -->
+<!-- <div id="money"></div> -->
