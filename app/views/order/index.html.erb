@@ -22,13 +22,13 @@
       <td><%= order.updated_at.strftime("%d/%m/%Y : %X")  %></td>
       <td>
         <%= link_to new_order_path( order.id ) do %>
-          <i class="material-icons">add</i>
+          <i class="material-icons color">add</i>
         <% end %>
         <%= link_to edit_order_path( order.id ) do %>
-          <i class="material-icons">edit</i>
+          <i class="material-icons color">edit</i>
         <% end %>
         <%= link_to order_path( order.id ), :method => :delete do %>
-          <i class="material-icons">delete</i>
+          <i class="material-icons color">delete</i>
         <% end %>
         <%#= link_to( "New", new_order_path( order.id )) %>
         <%# link_to( "Edit", edit_order_path( order.id )) %>
