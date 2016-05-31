@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title><%= "#{@page_title}" if @page_title %></title>
+  <%= favicon_link_tag 'favicon-32x32' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <header class="page-footer">
   <!-- Dropdown Structure -->
   <ul id="dropdown1" class="dropdown-content">
     <li><%= link_to "All users", users_path %></li>
@@ -16,9 +18,10 @@
     <li><%= link_to "Logout", logout_path( @current_user ), :method => :delete %></li>
   </ul>
 
+
   <nav>
-   <div class="nav-wrapper">
-     <a href="#" class="brand-logo">BAC Systems</a>
+   <div class="nav-wrapper blue-grey lighten-3">
+    <a href="/" class="brand-logo left"><img class="responsive-img" src="/assets/logo.png"></a>
      <ul id="nav-mobile" class="right hide-on-med-and-down">
        <% if !@current_user %>
        <li><%= link_to "Create an account", new_user_path%></li>
@@ -27,12 +30,12 @@
        <% if @current_user %>
        <li><%= link_to "Orders", order_index_path %></li>
        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-       <li><a class="dropdown-button" data-activates="dropdown1">Users<i class="material-icons right">arrow_drop_down</i></a></li>
+       <li><a class="dropdown-button" data-activates="dropdown1"><i class="material-icons">perm_identity</i></a></li>
         <% end %>
    </ul>
    </div>
  </nav>
-
+</header>
   <!--
     "Show all users" - All the time
     "View a profile" - If I am logged in

@@ -1,6 +1,6 @@
 <% @page_title = "All Orders" %>
 <div class="container">
-<p><%= @page_title %></p>
+<h2 class="title"><%= @page_title %></h2>
 <table  class="striped">
   <thead>
     <tr>
@@ -21,16 +21,28 @@
       <td><%= order.created_at.strftime("%d/%m/%Y : %X")  %></td>
       <td><%= order.updated_at.strftime("%d/%m/%Y : %X")  %></td>
       <td>
-        <%= link_to( "New", new_order_path( order.id )) %>
-        <%= link_to( "Edit", edit_order_path( order.id )) %>
-        <%= link_to( "Delete", order_path( order.id ), :method => :delete ) %>
+        <%= link_to new_order_path( order.id ) do %>
+          <i class="material-icons">add</i>
+        <% end %>
+        <%= link_to edit_order_path( order.id ) do %>
+          <i class="material-icons">edit</i>
+        <% end %>
+        <%= link_to order_path( order.id ), :method => :delete do %>
+          <i class="material-icons">delete</i>
+        <% end %>
+        <%#= link_to( "New", new_order_path( order.id )) %>
+        <%# link_to( "Edit", edit_order_path( order.id )) %>
+        <%# link_to( "Delete", order_path( order.id ), :method => :delete ) %>
       </td>
     </tr>
   </tbody>
     <% end %>
 
 </table>
-  <%= will_paginate @posts %>
+<div>
+  <p></p>
+  <%= will_paginate @posts, :previous_label => '<i class="material-icons">chevron_left</i>', :next_label => '<i class="material-icons">chevron_right</i>', :renderer => ApplicationHelper::LinkRenderer %>
+</div>
 </div>
 
 <!-- <div id="time"><%# @hash[:pods]["Result"][0][0..7] %></div> -->
