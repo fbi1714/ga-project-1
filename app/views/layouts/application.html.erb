@@ -27,10 +27,17 @@
        <li><%= link_to "Login", login_path %></li>
        <% end %>
        <% if @current_user %>
-       <li><%= link_to "Orders", order_index_path %></li>
+       <li>
+         <%= link_to order_index_path do %>
+         <i class="material-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Orders" ">reorder</i>
+         <% end %>
+       </li>
        <!-- <li><a href="sass.html"><i class="material-icons">search</i></a></li> -->
        <li><a class="dropdown-button" data-activates="dropdown1"><i class="material-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Users" ">perm_identity</i></a></li>
         <% end %>
+
+
+
    </ul>
    </div>
  </nav>
@@ -67,5 +74,6 @@
         </footer>
 
 <script>$(document).ready(function() { $(".dropdown-button").dropdown();});</script>
+<script>$('.tooltipped').tooltip({delay: 50});</script>
 </body>
 </html>
