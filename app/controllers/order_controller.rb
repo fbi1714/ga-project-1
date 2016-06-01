@@ -3,7 +3,7 @@ class OrderController < ApplicationController
   before_action :authorise
 
   def index
-    Wolfram.appid = "R75TQY-45HLK2EVYL"
+    Wolfram.appid = ENV["WOLFRAM_CLIENT_ID"]
     query = 'Sydney Australia time'
     result = Wolfram.fetch(query)
     # to see the result as a hash of pods and assumptions:

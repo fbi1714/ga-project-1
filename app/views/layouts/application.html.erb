@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title><%= "#{@page_title}" if @page_title %></title>
   <%= favicon_link_tag 'favicon-32x32' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -10,7 +9,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header class="page-footer">
+<header>
   <!-- Dropdown Structure -->
   <ul id="dropdown1" class="dropdown-content ">
     <li><%= link_to "All users", users_path, :class => "blue-grey-text text-lighten-3" %></li>
@@ -29,13 +28,14 @@
        <% end %>
        <% if @current_user %>
        <li><%= link_to "Orders", order_index_path %></li>
-       <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+       <!-- <li><a href="sass.html"><i class="material-icons">search</i></a></li> -->
        <li><a class="dropdown-button" data-activates="dropdown1"><i class="material-icons">perm_identity</i></a></li>
         <% end %>
    </ul>
    </div>
  </nav>
-</header>
+ </header>
+
   <!--
     "Show all users" - All the time
     "View a profile" - If I am logged in
@@ -45,10 +45,28 @@
 
     "Create an account" - If I am not logged in
    -->
-
+<main>
 <%= yield %>
-<script>$(document).ready(function() {
-$(".dropdown-button").dropdown();
-});</script>
+</main>
+
+<footer class="page-footer blue-grey lighten-3">
+          <div class="container">
+            <div class="row">
+              <div class="col s6">This div is 6-columns wide</div>
+      <div class="col s6">This div is 6-columns wide</div>
+
+
+            </div>
+          </div>
+
+          <!-- Copyright Mark -->
+          <div class="footer-copyright">
+            <div class="container" id="copyright">
+              &copy; <%= copyright_notice_year_range(2010) %> <%= link_to " BAC Systems Pty ", "/", :class => "white-text" %>
+            </div>
+          </div>
+        </footer>
+
+<script>$(document).ready(function() { $(".dropdown-button").dropdown();});</script>
 </body>
 </html>

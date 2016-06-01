@@ -18,9 +18,21 @@ img.responsive-img {
   top: 2px;
   left: 10px;
 }
-a.active{
 
-}
 .material-icons.color {
   color: #000;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .container#copyright{
+    text-align: center;
+  }
