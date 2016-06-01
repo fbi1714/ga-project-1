@@ -10,9 +10,9 @@ def copyright_notice_year_range(start_year)
   # of a range (e.g., 2010 - 2012). Alternatively, as long as the start year
   # is reasonable, return it as a string. Otherwise, return the current year
   # from the system.
-  if current_year > start_year && start_year > 2000
+  if current_year > start_year && start_year > 1975
     "#{start_year} - #{current_year}"
-  elsif start_year > 2000
+  elsif start_year > 1975
     "#{start_year}"
   else
     "#{current_year}"
