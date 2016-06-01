@@ -20,7 +20,7 @@
 
   <nav>
    <div class="nav-wrapper blue-grey lighten-3">
-    <a href="/" class="brand-logo left"><img class="responsive-img" src="/assets/logo.png"></a>
+    <a href="/" class="brand-logo left"><%= image_tag("logo.png", :class=>"responsive-img") %></a>
      <ul id="nav-mobile" class="right hide-on-med-and-down">
        <% if !@current_user %>
        <li><%= link_to "Create an account", new_user_path%></li>
