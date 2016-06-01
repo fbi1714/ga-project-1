@@ -61,7 +61,29 @@
             <div class="row">
               <!-- Currency Design -->
               <div class="col s4">
-                dfadf
+                <div class="row">
+                      <div class="input-field col s4">
+                         <select>
+                           <option value="1">Option 1</option>
+                           <option value="2">Option 2</option>
+                           <option value="3">Option 3</option>
+                         </select>
+                           <label class="white-text" for="">From</label>
+                      </div>
+                      <div class="input-field col s4">
+                         <select>
+                           <option value="1">Option 1</option>
+                           <option value="2">Option 2</option>
+                           <option value="3">Option 3</option>
+                         </select>
+                           <label class="white-text" for="">To</label>
+                      </div>
+                      <div class="input-field col s4" id="result">
+                           <label class="white-text" for="">Exchange</label>
+                           <input id="result" type="text" disabled>
+                           <label class="white-text" for="">Exchange</label>
+                      </div>
+                    </div>
               </div>
 
 
@@ -76,7 +98,7 @@
           <!-- Copyright Mark -->
           <div class="footer-copyright">
             <div class="container" id="copyright">
-              &copy; <%= copyright_notice_year_range(1977) %> <%= link_to " BAC Systems Pty ", "/", :class => "white-text" %>
+              &copy; <%= copyright_notice_year_range(1977) %> <%= link_to " BAC Systems Pty Limited", "/", :class => "white-text" %>
             </div>
           </div>
         </footer>

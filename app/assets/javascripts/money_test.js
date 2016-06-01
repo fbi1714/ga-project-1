@@ -14,7 +14,7 @@ var displayCurrency = function () {
 
 displayCurrency();
 
-
+$("#result").text( Object.keys(fx.rates)[29] + " = $ " + rate.toFixed(3) + " " + Object.keys(fx.rates)[0])
 // Select the two dropdowns, every time one of them is changed,
 
 // $("select").on("change", displayCurrency);
