@@ -32,3 +32,6 @@
   <% if flash[:error] %>
     <p><%= flash[:error] %></p>
   <% end %>
+
+
+<div id="time"><% @hash[:pods]["Result"][0][0..7] -%></div>
