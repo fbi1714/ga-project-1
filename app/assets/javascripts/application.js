@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require money.min.js
 //= require_tree .
 // = require materialize-sprockets
