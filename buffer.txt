@@ -35,3 +35,13 @@
 
 
 <div id="time"><% @hash[:pods]["Result"][0][0..7] -%></div>
+
+<div class="input-field col s4">
+   <select>
+     <option value=""  selected>Choose your option</option>
+     <option value="1">Option 1</option>
+     <option value="2">Option 2</option>
+     <option value="3">Option 3</option>
+   </select>
+     <label class="white-text" for="">From</label>
+</div>

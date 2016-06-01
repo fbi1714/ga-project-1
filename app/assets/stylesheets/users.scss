@@ -42,9 +42,14 @@ body {
 
   select{
     height: 1.5rem;
-    width: 60%;
+    width: 100%;
   }
 
   .page-footer{
     color: #fff;
+  }
+  .row .col.s4#black{
+    background-color: hotpink;
+    font-size: 12px;
+    padding: 5x;
   }
