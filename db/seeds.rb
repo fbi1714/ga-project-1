@@ -14,5 +14,5 @@ jonesy = User.create :name => "Jonesy", :email => 'jonesy@ga.co', :password => '
 Order.destroy_all
 
 algol = Order.create :description => "Algol", :order_number => "90133421"
-laos = Order.create :description => "Algol", :order_number => "90121373"
-mimi = Order.create :description => "Algol", :order_number => "90122332"
+laos = Order.create :description => "Laos", :order_number => "90121373"
+mimi = Order.create :description => "Mimi", :order_number => "90122332"

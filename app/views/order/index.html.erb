@@ -22,7 +22,7 @@
       <td><%= order.updated_at.strftime("%d/%m/%Y : %X")  %></td>
       <td>
         <%= link_to new_order_path( order.id ) do %>
-          <i class="material-icons color tooltipped data-position="top" data-delay="15" data-tooltip="add" ">add</i>
+          <i class="material-icons color tooltipped data-color="light-blue lighten-4" data-position="left" data-delay="15" data-tooltip="add" ">add</i>
         <% end %>
         <%= link_to edit_order_path( order.id ) do %>
           <i class="material-icons color tooltipped data-position="bottom" data-delay="15" data-tooltip="edit" ">edit</i>
