@@ -1,0 +1,17 @@
+{
+  "name": "bower_components",
+  "homepage": "https://github.com/fbi1714/ga-project-1",
+  "authors": [
+    "fbi1714 <fcamatti@ucs.br>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
