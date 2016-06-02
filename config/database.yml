@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: orderNumber_production
-  username: orderNumber
+  username: <%= ENV['ORDERNUMBER_DATABASE_USERNAME'] %>
   password: <%= ENV['ORDERNUMBER_DATABASE_PASSWORD'] %>

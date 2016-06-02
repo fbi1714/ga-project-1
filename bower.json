@@ -1,5 +1,5 @@
 {
-  "name": "bower_components",
+  "name": "ordernumber",
   "homepage": "https://github.com/fbi1714/ga-project-1",
   "authors": [
     "fbi1714 <fcamatti@ucs.br>"
@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "Materialize": "materialize#^0.97.6"
+  }
 }

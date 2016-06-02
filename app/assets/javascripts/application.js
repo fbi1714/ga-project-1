@@ -16,3 +16,4 @@
 //= require money.min.js
 //= require_tree .
 // = require materialize-sprockets
+//= require underscore/underscore
