@@ -34,6 +34,7 @@ gem 'table_helpers', '~> 1.0'
 gem 'gon'
 gem 'rabl-rails'
 gem 'will_paginate', '~> 3.1.0'
+gem 'umlaut'
 
 
 # Use Unicorn as the app server
