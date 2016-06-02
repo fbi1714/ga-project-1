@@ -11,3 +11,5 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'bower_components')
 Rails.application.config.assets.precompile << /materialize\/font\/.+\.(?:svg|eot|woff|woff2|ttf)\z/
+Rails.application.config.assets.non_digested_assets ||= []
+Rails.application.config.assets.non_digested_assets << 'materialize/font/**/*'  
