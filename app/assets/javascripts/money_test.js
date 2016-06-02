@@ -11,7 +11,7 @@ var displayCurrency = function () {
 
   }
 
-  $.getJSON("http://api.fixer.io/latest", money)
+  $.getJSON("https://api.fixer.io/latest", money)
 }
 
 displayCurrency();
