@@ -33,6 +33,9 @@ body {
     flex: 1 0 auto;
   }
 
+  .container#forma{
+      width: 40%;
+  }
   .container#copyright{
     text-align: center;
   }
@@ -66,3 +69,19 @@ body {
    .input-field input[type=text]:disabled {
      border-bottom: 1px solid #fff;
    }
+
+   input[type=password]:focus:not([readonly]) {
+      border-bottom: 1px solid #b0bec5;
+      box-shadow: 0 1px 0 0 #b0bec5;
+    }
+    input[type=email]:focus:not([readonly]) {
+       border-bottom: 1px solid #b0bec5;
+       box-shadow: 0 1px 0 0 #b0bec5;
+     }
+     input[type=text]:focus:not([readonly]) {
+        border-bottom: 1px solid #b0bec5;
+        box-shadow: 0 1px 0 0 #b0bec5;
+      }
+    .waves-effect#centro {
+      margin-left: 40%;
+    }

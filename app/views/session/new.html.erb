@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="forma">
 <h2 class="title">Login</h2>
 
 <% if flash[:success] %>
@@ -19,6 +19,6 @@
     <%= password_field_tag :password %>
   </p>
 
-  <%= submit_tag "Login", class: 'waves-effect blue-grey lighten-3 btn' %>
+  <%= submit_tag "Login", class: 'waves-effect blue-grey lighten-3 btn', id:"centro" %>
 <% end %>
 </div>
