@@ -3,11 +3,6 @@ class OrderController < ApplicationController
   before_action :authorise
 
   def index
-    Wolfram.appid = ENV["WOLFRAM_CLIENT_ID"]
-    query = 'Sydney Australia time'
-    result = Wolfram.fetch(query)
-    # to see the result as a hash of pods and assumptions:
-    @hash = Wolfram::HashPresenter.new(result).to_hash
     @posts = Order.paginate(:page => params[:page], :per_page => 2)
   end
 

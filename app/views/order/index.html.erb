@@ -43,4 +43,5 @@
     <p></p>
     <%= will_paginate @posts, :previous_label => '<i class="material-icons">chevron_left</i>', :next_label => '<i class="material-icons">chevron_right</i>', :renderer => ApplicationHelper::LinkRenderer %>
   </div>
+  <div id="time"><% @hash[:pods]["Result"][0][0..7] -%></div>
 </div>
