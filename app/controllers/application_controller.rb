@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
       Wolfram.appid = ENV["WOLFRAM_CLIENT_ID"]
       query = "#{params[:text][:name]} time" if params[:text]
       result = Wolfram.fetch(query || 'Sydney Australia time')
-      # to see the result as a hash of pods and assumptions:
+      # to see the result 3as a hash of pods and assumptions:
       @hash = Wolfram::HashPresenter.new(result).to_hash
     end
 
