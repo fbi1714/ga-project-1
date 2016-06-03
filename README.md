@@ -5,10 +5,6 @@
   This is an application aimed to improve the management an order number for the company mechanical drafts by improve the traceability and . Currently, this process is done manually through paper cards. Every employee from the engineering team has to go the an office where the file is and take the latest card in order to get a new order number. Then he/she has to insert into it, the current date, customer name and the newest order number.  
 ___
 
-### See it at
-  This application is online here at  [Heroku](https://ga-project-1.herokuapp.com)
-___
-
 ### Explanations
 
   1. Technologies used in this project:
