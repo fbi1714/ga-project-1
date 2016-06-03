@@ -32,6 +32,8 @@ ___
 
   4. Issues:    
 
-    - To be done. -> But when??
+    - Enable the order table to be filtered, sorted and searched.
+    - Improve the currency exchange area and the time area designs.
+    - Heroku issue with the Robot font. It doesn't find the font due an issue with the Ruby on Rails environments see [here](http://blog.silvabox.com/materialize-on-rails-4-with-bower-and-heroku/) a long topic about this type of problem 
 
 ___
