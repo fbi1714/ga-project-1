@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  WDi 14 Project #2: Order Number Generator by Fábio Camatti.
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  WDi 14 Project #2: Order Number Generator.
 
 ### Overview
 
@@ -11,14 +11,15 @@ ___
 
 ### Explanations
 
-  1. Technologies used in this application
+  1. Technologies used in this project:
       1. Ruby on Rails as web framework
       2. Postgress as SQL database for the local development enviroment
       3. Heroku was service provide to run the application online/in-the-cloud.
       4. Materializecss as CSS library
       5. jQuery to render some effects from the Materializecss and the [Fixer.io] (http://fixer.io) api.
       6. [Fixer.io] (http://fixer.io) api to get the currency data
-      7. [Wolfr]
+      7. [Wolfram Alpha data api](http://products.wolframalpha.com/api/) to get the cities world time
+      8. The Ruby on Rails [will_paginate gem] (https://rubygems.org/gems/will_paginate) to generates the order tables pagination.
 
   2.  
 
