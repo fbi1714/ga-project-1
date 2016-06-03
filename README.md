@@ -38,3 +38,10 @@ ___
     - Only enable the apis data to be rendered after the user have logged in
 
 ___
+
+### Special thanks to:
+
+  - Jack, WDi 14 instructor, which guide me through the whole project development and for solving the project issues with the Rails controllers, rendering the apis data and solving the [Materializecss](http://materializecss.com/) issues.
+  - Kane, to show us how to work with Heroku, Cloudinary and other tools.
+  - Sheriff, to help me loading the api data.
+  - To all my classmates for the support to finish my project.
