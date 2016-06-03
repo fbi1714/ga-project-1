@@ -1,11 +1,11 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  WDi 14 Project #1: Order Number Generator.
 
-### Overview
+## Overview
 
   This is an application aimed to improve the management an order number for the company mechanical drafts by improve the traceability and . Currently, this process is done manually through paper cards. Every employee from the engineering team has to go the an office where the file is and take the latest card in order to get a new order number. Then he/she has to insert into it, the current date, customer name and the newest order number.  
 ___
 
-### Explanations
+## Explanations
 
   1. Technologies used in this project:
       1. Ruby on Rails as web framework
@@ -35,7 +35,7 @@ ___
 
 ___
 
-### Special thanks to:
+## Special thanks to:
 
   - Jack, WDi 14 instructor, which guide me through the whole project development and for solving the project issues with the Rails controllers, rendering the apis data and solving the [Materializecss](http://materializecss.com/) issues.
   - Kane, to show us how to work with Heroku, Cloudinary and other tools.
