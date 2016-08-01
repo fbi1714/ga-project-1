@@ -2,7 +2,7 @@
 
 ## Overview
 
-  This is an application aimed to improve the management an order number for the company mechanical drafts by improve the traceability and . Currently, this process is done manually through paper cards. Every employee from the engineering team has to go the an office where the file is and take the latest card in order to get a new order number. Then he/she has to insert into it, the current date, customer name and the newest order number.  
+  The purpose of this project was to create a tool that could automate the process to generate new customer order numbers and to manage these numbers through an intranet server. 
 ___
 
 ## Explanations
