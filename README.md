@@ -17,16 +17,8 @@ ___
       7. [Wolfram Alpha data api](http://products.wolframalpha.com/api/) to get the cities world time
       8. The Ruby on Rails [will_paginate gem](https://rubygems.org/gems/will_paginate) to generates the order tables pagination.
 
-  2. Project development path:
 
-    - To be done. -> But when??
-
-  3. Installation instructors
-
-    - To be done. -> But when??
-
-
-  4. Issues:    
+  2. Issues:    
 
     - Enable the order table to be filtered, sorted and searched.
     - Improve the currency exchange area and the time area designs.
